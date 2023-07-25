@@ -1,0 +1,76 @@
+body {
+  background-color: salmon;
+  color: #821205;
+  text-align: center;
+}
+
+h1, #score, #congrats {
+  font-size: 100px;
+  font-family: CuteMeow;
+  src: url(Cute_Meow.otf);
+}
+
+h2 {
+  font-size: 40px;
+  text-align: left;
+}
+
+p, #advice {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  text-align: left;
+}
+
+.welcome {
+  display: block;
+  background-color: #821205;
+  color: salmon;
+  padding: 10px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+button {
+  background: salmon;
+  font-size: 20px;
+  color: #821205;
+  font-family: 'Trebuchet MS', sans-serif;
+  padding: 20px;
+  border-radius: 30px;
+  will-change: transform;
+  transition: transform 450ms;
+}
+
+button:hover, button:focus {
+  background-color: #560C03;
+  color: salmon;
+  transition: transform 150ms;
+  transform: scale(1.1);
+}
+
+a:link, a:visited {
+  color: #821205;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: salmon;
+}
+
+button:active {
+  transform: scale(0.8);
+}
+
+div img:hover {
+  cursor: pointer;
+}
+
+#advice {
+  font-size: 40px;
+  text-align: center;
+}
+
+#congrats {
+  margin: 50px;
+}
