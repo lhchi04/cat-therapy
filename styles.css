@@ -1,4 +1,6 @@
 body {
+  background-image: url("img/pusheenbg.png");
+  background-blend-mode: soft-light;
   background-color: salmon;
   color: #821205;
   text-align: center;
@@ -70,4 +72,29 @@ div img:hover {
 
 #congrats {
   margin: 50px;
+}
+
+#ask {
+  display: block;
+  width: 500px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #821205;
+  color: salmon;
+}
+
+#ask p, #end p, .beg p {
+  text-align: center;
+  font-size: 25px;
+}
+
+.button-end {
+  display: flex;
+}
+
+#ask button {
+  flex: 1;
+  justify-content: center;
+  margin: 20px;
 }

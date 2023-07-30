@@ -3,18 +3,18 @@ const advices = ['Shave your head for a new start', 'You should get real money t
 function incScore(num) {
   score = score + num;
   document.getElementById("score").innerHTML = score;
-  if (score === 20) {
+  if (score % 50 === 0) {
     document.getElementById("advice").innerHTML = advice();  
   }
 }
 function sound() {
-  var pop = new Audio('popcat.mp3');
+  var pop = new Audio('img/popcat.mp3');
   pop.play();
 }
 function picChange(img) {
-  img.src = "popcat_wow.png";
+  img.src = "img/popcat_wow.png";
   setTimeout(() => {
-    img.src = "popcat.png";
+    img.src = "img/popcat.png";
   }, 100);
 }
 function advice() {
@@ -23,5 +23,5 @@ function advice() {
 }
 
 function getScore() {
-  document.getElementById("congrats").innerHTML = `You pop the cat ${score} times purrrr !`;
+  document.getElementById("congrats").innerHTML = "You pop the cat"+"<br>"+ `${score} times`+"<br>"+"purrrr !";
 }

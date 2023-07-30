@@ -15,27 +15,41 @@
       <p>Meowcome to our <em>pawsome</em> Cat Therapy service! 🐾 If you're feline down, stressed, or just in need of a good <em>purr-ty</em> session, you've come to the right place! Purr-pare yourself for a <strong>meowgical</strong> experience where all your worries will vanish like a mouse in a game of hide-and-seek!</p>
       <p>Our <strong>whisker-licking good therapists</strong> are here to shower you with unconditional <strong>pawfection</strong> and give you all the headbutts and chin scritches you desire. So, meow-sit back, relax, and let the healing power of our furry purr-fessionals work their wonders. We promise you'll leave here with a heart full of joy and a smile as wide as a Cheshire cat's grin!</p>
       <button>
-        <a href="#therapists">Let's get started!</a>
+        <a href="#therapist1">Let's get started!</a>
       </button>
     </div>
 
-    <div id="therapists">
-      <h2>Our purr-fessionals!</h2>
-      <div class="flex-containers">
-        <div class="cat1">
-          <div id="score">0</div>
-          <img id="image" style="height: 500px; width: inherit;" src="popcat.png" alt="a cat" onclick="incScore(1), sound(), picChange(this)">
-          <div id="advice"></div>
-          <script src="click.js"></script>
-          <p style="text-align: center;">Pop him 20 times to get an advice!</p>
-          <button onclick="getScore()">
-            <a href="#congrats">Tired of clicking? Click me!</a>
+    <div class="therapists" id="therapist1">
+      <h2>Our purr-fessional!</h2>
+      <div id="score">0</div>
+      <img id="image" style="height: 450px; width: inherit;" src="img/popcat.png" alt="a cat" onclick="incScore(1), sound(), picChange(this)">
+      <div id="advice"></div>
+      <script src="click.js"></script>
+      <p style="text-align: center;">Pop him 50 times to get an advice!</p>
+      <button onclick="getScore()">
+        <a href="#next">Tired of clicking? Click me!</a>
+      </button>
+    </div>
+
+    <div id="next">
+      <div id="congrats"></div>
+      <div id="ask">
+        <p>Want to end your session already?</p>
+        <div class="button-end">
+          <button>
+            <a href="#end">I don't want to but I have to</a>
+          </button>
+          <button>
+            <a href="#therapist1">NEVURRRRRR</a>
           </button>
         </div>
       </div>
     </div>
-
-    <div id="congrats"></div>
+    
+    <div id="end">
+      <p>We are so sad to say goodbye to you. Come back some other day!</p>
+      <img src="https://i.kym-cdn.com/photos/images/original/001/389/404/a2b.jpg" alt="fat crying cat">
+    </div>
   </body>
 </html>
 
