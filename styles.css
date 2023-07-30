@@ -1,3 +1,8 @@
+@font-face {
+  font-family: CuteMeow;
+  src: url(Cute_Meow.otf);
+}
+
 body {
   background-image: url("img/pusheenbg.png");
   background-blend-mode: soft-light;
@@ -9,7 +14,6 @@ body {
 h1, #score, #congrats {
   font-size: 100px;
   font-family: CuteMeow;
-  src: url(Cute_Meow.otf);
 }
 
 h2 {
